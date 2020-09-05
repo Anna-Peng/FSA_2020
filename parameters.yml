@@ -1,0 +1,51 @@
+## = lines that must be commented (by inserting # at the beginning of the line) to skip scraping (all or selected platforms)
+### = editable fields
+
+scrapy: 
+  project: platforms
+  source: src/data
+  copy: platforms/platforms/spiders
+  data: data/raw
+  spiders:
+    deliveroo: ##
+      postcode: E16AW ## ###
+      date: '2020_09_05' ## ###
+      mode: run ##
+    kukd: ##
+      postcode: E16AW ## ###
+      date: '2020_09_05' ## ###
+      mode: run ##
+    fbmktplace: ##
+      city: london ## ###
+      keywords: homemade food ## ###
+      date: '2020_09_05' ## ###
+      mode: run ##
+      max_n_results: '200' ## ###
+      scroll_pause_time: '1.0' ## ### 
+    
+platforms:
+  deliveroo:
+    preprocessor: DeliverooPreprocessor
+    prefix: data/raw/deliveroo_
+    outdir: data/interim/
+  kukd:
+    preprocessor: KukdPreprocessor
+    prefix: data/raw/kukd_
+    outdir: data/interim/
+  fbmktplace:
+    preprocessor: FbmktplacePreprocessor
+    prefix: data/raw/fbmktplace_
+    outdir: data/interim/
+
+editable:
+  platforms: data/raw/Platforms_editable.csv
+  platformtypes: data/raw/PlatformTypes_editable.csv
+
+generated:
+  platforms: data/interim/Platforms_dbpart.csv
+  platformplatformtypes: data/interim/platformPlatformTypes_dbpart.csv
+  platformtypes: data/interim/platformTypes_dbpart.csv
+  businesstypes: data/interim/BusinessTypes_dbpart.csv
+  
+database: data/processed/foobar.db
+
