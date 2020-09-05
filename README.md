@@ -23,13 +23,13 @@ The official documentation is hosted on this repository's [wiki](https://github.
 git clone https://github.com/team-fsa-s2ds-alumni/foobar-database.git
 cd foobar-database
 conda env create -f environment.yml
-conda activate foobar
+conda activate foobar-database
 pip install -e .
 ```
 
 ## Update conda environment with yaml
 ```
-conda activate foobar
+conda activate foobar-database
 conda env update -f environment.yml
 ```
 
@@ -47,12 +47,12 @@ pytest
 ## Build Docker image
 
 ```
-docker build -t foobar .
+docker build -t foobar-database .
 ```
 
 ## Run Docker image
 
 ```
-docker run foobar
+docker run foobar-database
 ```
 
