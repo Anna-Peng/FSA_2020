@@ -1,4 +1,3 @@
-from pkg_resources import Requirement, resource_filename
 from src.features.DeliverooPreprocessor import DeliverooPreprocessor
 from src.features.KukdPreprocessor import KukdPreprocessor
 from src.data.FHRSWrapper import FHRSWrapper

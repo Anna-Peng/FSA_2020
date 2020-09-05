@@ -161,7 +161,7 @@ def prependpath(filename):
     """
     Returns the path that prepends the repository's top directory to the filename
     """
-    return resource_filename(Requirement.parse('foobar'), filename)
+    return resource_filename(Requirement.parse('foobar-database'), filename)
 
 def prettyprint(filename):
     """
