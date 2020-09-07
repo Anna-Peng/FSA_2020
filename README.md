@@ -11,7 +11,7 @@
 ![CI (pip)](https://github.com/team-fsa-s2ds-alumni/foobar-database/workflows/CI%20(conda)/badge.svg)
 [![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-`FOOBAR` provides a command-line tool with a built-in web scraping tool to assemble a relational database that maps the landscape of online food platforms.
+`FOOBAR` provides a command-line tool with a built-in web scraping tool to assemble a relational database of online businesses and restaurants.
 
 ## Documentation
 
